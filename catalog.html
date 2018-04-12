@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Каталог товаров</title>
+    <link rel="stylesheet" href="css/catalog.css">
+</head>
+<body>
+  <header class="main-header">
+    <nav class="main-navigator">
+      <a class="main-header-logo" href="index.html">
+        <img src="img/logo.svg" width="111" height="24" alt="Логотип барбершопа <Подвальный>">
+      </a>
+      <ul class="site-navigation">
+        <li><a href="#">Информация</a></li>
+        <li><a href="#">Новости</a></li>
+        <li><a href="#">Прайс-лист</a></li>
+        <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+      <ul class="user-navigation">
+        <li class="login-link">Вход</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1 class="page-title">Средства для ухода</h1>
+    <ul class="breadcrumbs">
+      <li><a href="#">Главная</a></li>
+      <li><a href="catalog.html">Магазин</a></li>
+      <li class="breadcrumbs-current">Средства для ухода</li>
+    </ul>
+
+    <section class="filters">
+      <h2 class="visually-hidden">Фильтр товаров</h2>
+      <form class="filter" action="get">
+        <fieldset>
+        <legend>Производители:</legend>
+        <ul>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="baxter-of-california" id="baxter-of-california" checked>
+            <label for="baxter-of-california">Baxter of california</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="mr-natty" id="mr-natty">
+            <label for="mr-natty">Mr Natty</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="suavecito" id="suavecito" checked>
+            <label for="suavecito">Suavecito</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="malin-goetz" id="malin-goetz">
+            <label for="malin-goetz">Malin+goetz</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="murrays" id="murrays">
+            <label for="murrays">Murray's</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="american-crew" id="american-crew" checked>
+            <label for="american-crew">American Crew</label>
+          </li>
+        </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Группы товаров:</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="shaving" id="shaving">
+              <label for="shaving">Бритвенные принадлежности</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="hair-care" id="hair-care" checked>
+              <label for="hair-care">Средства для ухода</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="accessories" id="accessories">
+              <label for="accessories">Аксессуары</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="filter-button button" type="submit">показать</button>
+      </form>
+    </section>
+
+    <section class="catalog">
+      <h2 class="visually-hidden">Список средств для ухода</h2>
+      <ul class="catalog-list">
+        <li class="catalog-item">
+          <h3>
+            <a href="catalog-item.html">
+              <span class="catalog-category">Набор для путешествий</span>
+              <span class="catalog-item-title">«Baxter of California»</span>
+            </a>
+          </h3>
+        </li>
+      </ul>
+
+    </section>
+
+
+  </main>
+
+  <footer class="main-footer">
+
+  </footer>
+
+
+</body>
+</html>

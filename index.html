@@ -15,9 +15,12 @@
         <ul class="main-navigation-menu">
           <li><a>ИНФОРМАЦИЯ</a></li>
           <li><a>НОВОСТИ</a></li>
-          <li><a>ПРАЙС-ЛИСТ</a></li>
+          <li><a href="catalog.html">ПРАЙС-ЛИСТ</a></li>
           <li><a>МАГАЗИН</a></li>
           <li><a>КОНТАКТЫ</a></li>
+        </ul>
+        <ul class="user-navigation">
+          <li class="login-link">Вход</li>
         </ul>
       </nav>
     </header>
@@ -91,14 +94,52 @@
           </p>
           <button class="button" type="submit">Отправить</button>
         </form>
-
       </section>
-
     </main>
 
     <footer class="main-footer">
-
+      <p class="footer-contacts">
+        Барбершоп "Подвальный"<br>
+        Адрес: г. Саки, ул. Подвальная 17<br>
+        <a href="map.html">Как нас найти</a><br>
+        Телефон: +7 978 888 8888
+      </p>
+      <div class="footer-social">
+        <ul>
+          <li><a class="social-button" href="vk.com">Вконтакте</a></li>
+          <li><a class="social-button" href="facebook.com">Фэйсбук</a></li>
+          <li><a class="social-button" href="instagram.com">Инстаграм</a></li>
+        </ul>
+      </div>
+      <p class="footer-copyright">
+        <b>Разработано</b>
+        <a class="button" href="samebash.huy.tam">Самзаебашил</a>
+      </p>
     </footer>
+  <section class="modal modal-login">
+    <h2>Личный кабинет</h2>
+    <p>Введите свой логин и пароль</p>
+    <form class="login-form" action="#" method="post">
+      <p>
+        <input class="login-request" type="text" name="login" placeholder="Логин">
+      </p>
+      <p>
+        <input class="password-request" type="password" name="password" placeholder="Пароль">
+      </p>
+      <p class="login-password-options">
+        <input type="checkbox" name="remember" class="visually-hidden">
+        Запомнить на этом сайте
+        <a class="restore" href="#">Я забыл пароль</a>
+      </p>
+      <button class="buttor" type="submit">Войти</button>
+    </form>
+    <span class="modal-close">X</span>
+  </section>
+
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">Как до нас добратся</h2>
+    <span class="modal-close">X</span>
+  </section>
 
   </body>
 </html>
