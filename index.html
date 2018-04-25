@@ -20,7 +20,9 @@
           <li><a>КОНТАКТЫ</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="login-link">Вход</li>
+          <li class="login-link">
+            <a class="login-link" href="login.html">Вход</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -64,8 +66,8 @@
         <h2>Фотогалерея</h2>
         <figure class="gallery-content">
           <a href="#"><img src="img/studio.jpg" height="150" width="300" alt="Интерьер"></a>
-          <span class="button gallery-button gallery-button-back">Назад</span>
-          <span class="button gallery-button gallery-button-next">Вперед</span>
+          <button class="button gallery-button gallery-button-back">Назад</button>
+          <button class="button gallery-button gallery-button-next">Вперед</button>
         </figure>
       </section>
 
@@ -88,10 +90,14 @@
         <h2>Записаться</h2>
         <p class="appointment-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
         <form class="appointment-form" action="#" method="post">
-          <p class="appointment-item">
-          Дата
-          <input type="text" name="Date" Value="" placeholder="08-10-2017">
-          </p>
+          <label for="appointment-form-date">Дата</label>
+          <input type="text" name="appointment-form-date" id="appointment-form-date" Value="" placeholder="08-10-2017">
+          <label for="appointment-form-time">Время</label>
+          <input type="text" name="appointment-form-time" id="appointment-form-time" value="" placeholder="10:00">
+          <label for="appointment-form-name">Имя</label>
+          <input type="text" name="appointment-form-name" id="appointment-form-name" value="" placeholder="Борода">
+          <label for="appointment-form-phone">Телефон</label>
+          <input type="tel" name="appointment-form-phone" id="appointment-form-phone" value="" placeholder="+7 978 777 77 77">
           <button class="button" type="submit">Отправить</button>
         </form>
       </section>
@@ -120,25 +126,26 @@
     <h2>Личный кабинет</h2>
     <p>Введите свой логин и пароль</p>
     <form class="login-form" action="#" method="post">
-      <p>
-        <input class="login-request" type="text" name="login" placeholder="Логин">
-      </p>
-      <p>
-        <input class="password-request" type="password" name="password" placeholder="Пароль">
-      </p>
+        <label class="visually-hidden" for="login-form-login">Ваш логин</label>
+        <input class="login-request" id="login-form-login" type="text" name="login" placeholder="Логин">
+        <label class="visually-hidden" for="login-form-password">Ваш пароль</label>
+        <input class="password-request" id="login-form-password" type="password" name="password" placeholder="Пароль">
       <p class="login-password-options">
-        <input type="checkbox" name="remember" id="remember" class="visually-hidden">
-        <label for="remember"> Запомните меня</label>
+        <input type="checkbox" name="remember" id="login-form-remember" class="visually-hidden">
+        <label for="login-form-remember"> Запомните меня</label>
         <a class="restore" href="#">Я забыл пароль</a>
       </p>
-      <button class="buttor" type="submit">Войти</button>
+      <button class="button" type="submit">Войти</button>
     </form>
-    <span class="modal-close">X</span>
+    <button class="modal-close" type="button">Закрыть</button>
   </section>
 
   <section class="modal modal-map">
     <h2 class="visually-hidden">Как до нас добратся</h2>
-    <span class="modal-close">X</span>
+    <p>
+      <img src="map.jpg" width="155" height="155" alt="Адрес Барбершопа Подвальный г. Саки, ул. Подвальная 17">
+    </p>
+    <button type="button" class="modal-close">Закрыть</button>
   </section>
 
   </body>
