@@ -222,22 +222,20 @@
 
   <section class="modal modal-login">
     <h2>Личный кабинет</h2>
-    <p>Введите свой логин и пароль.</p>
-    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-      <p>
-        <input class="login-icon-user" type="text" name="login" placeholder="Логин">
-      </p>
-      <p>
-        <input class="login-icon-password" type="password" name="password" placeholder="Пароль">
-      </p>
+    <p>Введите свой логин и пароль</p>
+    <form class="login-form" action="#" method="post">
+      <label class="visually-hidden" for="login-form-login">Ваш логин</label>
+      <input class="login-request" id="login-form-login" type="text" name="login" placeholder="Логин">
+      <label class="visually-hidden" for="login-form-password">Ваш пароль</label>
+      <input class="password-request" id="login-form-password" type="password" name="password" placeholder="Пароль">
       <p class="login-password-info">
-        <input type="checkbox" name="remember" id="remember" class="visually-hidden">
-        <label for="remember"> Запомните меня</label>
-        <a class="restore" href="#">Я забыл пароль!</a>
+        <input type="checkbox" name="remember" id="login-form-remember" class="visually-hidden">
+        <label class="checkbox-indicator" for="login-form-remember"> Запомните меня</label>
+        <a class="restore" href="#">Я забыл пароль</a>
       </p>
       <button class="button" type="submit">Войти</button>
     </form>
-    <span class="modal-close">x</span>
+    <button class="modal-close" type="button">Закрыть</button>
   </section>
 
 
