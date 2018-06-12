@@ -9,6 +9,8 @@
 body {
   margin: 0;
   padding: 0;
+  min-width: 1122px;
+  min-height: 1750px;
 
   font-family: "PT Sans Narrow", Arial, sans-serif;
   font-size: 14px;
@@ -46,15 +48,55 @@ a {
 }
 
 .main-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
 
+  background-color: transparent;
+}
+
+.main-navigation-wrapper {
+  width: 100%;
+  margin-bottom: 60px;
+
   background-color: #000000;
 }
 
-.main-navigation-menu,
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-navigation-wrapper .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-navigation-logo {
+  order: 2;
+
+  width: 368px;
+  height: 153px;
+}
+
+.main-navigation-menu {
+  width: 620px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
 .user-navigation {
+  width: 140px;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -70,19 +112,35 @@ a {
   background-color: #242424;
 }
 
+.advantage {
+  margin-bottom: 80px;
+}
+
 .advantage-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
 .advantage-item {
+  width: 300px;
   text-align: center;
 }
+
 .advantage-item h3 {
   font-size: 30px;
   line-height: 42px;
 }
 
 .index-columns {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 80px;
+  margin-bottom: 35px;
+
   color: #000000;
 
   background-color: #f8f5f2;
@@ -94,6 +152,15 @@ a {
 .index-columns h2 {
   font-size: 30px;
   line-height: 42px;
+}
+
+.news {
+  width: 380px;
+
+}
+
+.gallery {
+  width: 300px;
 }
 
 .news-list {
@@ -108,6 +175,14 @@ a {
   border: 7px solid #ffffff;
 }
 
+.contacts {
+  width: 380px;
+}
+
+.appointment {
+  width: 300px;
+}
+
 .appointment-form input {
   font: inherit;
 
@@ -120,12 +195,25 @@ a {
 }
 
 .main-footer {
+  padding: 60px 0;
+  margin-top: 65px;
+
   color: #ffffff;
 
   background-color: #212121;
   background-image: url("/img/pattern-dark.png");
   background-position: 0 0;
   background-repeat: repeat;
+}
+
+.main-footer .container {
+  display: flex;
+}
+
+.footer-contacts {
+  width: 320px;
+  margin: 0;
+  margin-right: 80px;
 }
 
 .footer-contacts a {
@@ -139,6 +227,8 @@ a {
 }
 
 .footer-social {
+  width: 145px;
+
   text-align: center;
 }
 
@@ -151,6 +241,9 @@ a {
 }
 
 .footer-copyright {
+  width: 150px;
+  margin: 0;
+  margin-left: auto;
   text-align: center;
 }
 
@@ -202,6 +295,11 @@ a {
 .restore:focus {
   text-decoration: none;
 }
+
+.main-header {
+  margin-bottom: 75px;
+}
+
 /*Inner-catalog*/
 .inner-page {
   color: #000000;
