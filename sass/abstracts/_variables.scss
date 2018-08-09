@@ -23,3 +23,10 @@ $shadow: (
   'product-photo': 0 0 10px 2px rgba(0, 0, 0, 0.1)
 );
 
+@function color($key) {
+  @if map-has-key($colors, $key) {
+    @return map-get($colors, $key);
+  }
+  @warn "Unknown `#{$key}` in $colors.";
+  @return null;
+}
