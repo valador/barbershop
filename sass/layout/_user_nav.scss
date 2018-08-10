@@ -1,0 +1,36 @@
+.user-navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  max-width: 140px;
+
+  a {
+    display: block;
+    padding: 25px 20px;
+
+    vertical-align: middle;
+    color: color('white');
+  }
+
+  a:hover,
+  a:focus {
+    background-color: color('nav');
+  }
+}
+
+/*
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: #242424;
+}
+*/
+
+/*.user-navigation a {
+  display: block;
+  padding: 25px 20px;
+
+  vertical-align: middle;
+  color: #ffffff;
+}*/
