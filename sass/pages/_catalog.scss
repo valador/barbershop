@@ -269,6 +269,14 @@
 
         background-color: #e5e5e5;
       }
+      .button {
+        width: 50px;
+        padding: 13px 18px 11px;
+        margin-right: 0;
+
+        line-height: 20px;
+        color: #ffffff;
+      }
     }
   }
   &-category {
@@ -353,14 +361,14 @@
   background-color: #e5e5e5;
 }*/
 
-.catalog-item-price .button {
+/*.catalog-item-price .button {
   width: 50px;
   padding: 13px 18px 11px;
   margin-right: 0;
 
   line-height: 20px;
   color: #ffffff;
-}
+}*/
 
 
 .pagination-list {
@@ -371,41 +379,71 @@
   margin: 0;
 
   list-style: none;
+  .pagination-item {
+    margin-right: 5px;
+
+    :last-child {
+      margin-right: 0;
+    }
+    a {
+      display: block;
+      padding: 10px 19px;
+
+      color: #ffffff;
+
+      background-color: #000000;
+
+      :hover,
+      :focus,
+      :active {
+        background-color: #663d15;
+      }
+    }
+  }
+
 }
 
-.pagination-item {
+/*.pagination-item {
   margin-right: 5px;
-}
+}*/
 
-.pagination-item:last-child {
+/*.pagination-item:last-child {
   margin-right: 0;
-}
+}*/
 
-.pagination-item a {
+/*.pagination-item a {
   display: block;
   padding: 10px 19px;
 
   color: #ffffff;
 
   background-color: #000000;
-}
+}*/
 
-.pagination-item a:hover,
+/*.pagination-item a:hover,
 .pagination-item a:focus,
 .pagination-item a:active {
   background-color: #663d15;
-}
+}*/
 
 .pagination-item-current a {
   color: #000000;
 
   background-color: #ffffff;
+
+  :hover,
+  :focus,
+  :active {
+    color: #000000;
+
+    background-color: #ffffff;
+  }
 }
 
-.pagination-item-current a:hover,
+/*.pagination-item-current a:hover,
 .pagination-item-current a:focus,
 .pagination-item-current a:active {
   color: #000000;
 
   background-color: #ffffff;
-}
+}*/

@@ -11,13 +11,19 @@
 
   background-color: color('black');
   border: none;
+
+  :hover,
+  :focus,
+  :active {
+    background-color: color('btn-ffilter');
+  }
 }
 
-.button:hover,
+/*.button:hover,
 .button:focus,
 .button:active {
   background-color: color('btn-ffilter');
-}
+}*/
 
 .button.disabled,
 .button:disabled {
@@ -33,12 +39,18 @@ gallery-button {
 
   width: 140px;
   margin: 0;
+  &-back {
+    left: 0;
+  }
+  &-next {
+    right: 0;
+  }
 }
 
-.gallery-button-back {
+/*.gallery-button-back {
   left: 0;
 }
 
 .gallery-button-next {
   right: 0;
-}
+}*/
