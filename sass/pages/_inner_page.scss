@@ -5,31 +5,55 @@
   background-image: url("img/pattern-light.jpg");
   background-position: 0 0;
   background-repeat: repeat;
+
+  .main-header {
+    margin-bottom: 50px;
+
+    background-color: #000000;
+  }
+  .main-navigation {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  .main-header-logo {
+    order: 0;
+
+    width: 111px;
+    height: 24px;
+    padding: 23px 20px;
+  }
+  .user-navigation {
+    margin-left: auto;
+  }
+  .main-footer {
+    margin-top: 45px;
+  }
 }
 
-.inner-page .main-header {
+/*.inner-page .main-header {
   margin-bottom: 50px;
 
   background-color: #000000;
-}
+}*/
 
-.inner-page .main-navigation {
+/*.inner-page .main-navigation {
   display: flex;
   align-items: flex-start;
   flex-direction: row;
-}
+}*/
 
-.inner-page .main-header-logo {
+/*.inner-page .main-header-logo {
   order: 0;
 
   width: 111px;
   height: 24px;
   padding: 23px 20px;
-}
+}*/
 
-.inner-page .user-navigation {
+/*.inner-page .user-navigation {
   margin-left: auto;
-}
+}*/
 
 
 .page-title {
@@ -50,19 +74,51 @@
   margin-bottom: 50px;
 
   list-style: none;
+
+  li {
+    position: relative;
+
+    margin-right: 42px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 7px;
+      right: -25px;
+
+      width: 8px;
+      height: 8px;
+
+      background-color: #000000;
+
+      transform: rotate(45deg);
+    }
+  }
+  a {
+    color: #000000;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
 }
 
-.breadcrumbs li {
+/*.breadcrumbs li {
   position: relative;
 
   margin-right: 42px;
-}
+}*/
 
-.breadcrumbs li:last-child {
+/*.breadcrumbs li:last-child {
   margin-right: 0;
-}
+}*/
 
-.breadcrumbs li::after {
+/*.breadcrumbs li::after {
   content: "";
 
   position: absolute;
@@ -75,26 +131,29 @@
   background-color: #000000;
 
   transform: rotate(45deg);
-}
+}*/
 
-.breadcrumbs a {
+/*.breadcrumbs a {
   color: #000000;
 }
 
 .breadcrumbs a:hover,
 .breadcrumbs a:focus {
   text-decoration: underline;
-}
+}*/
 
 .breadcrumbs-current {
   color: #aba9a7;
+  &::after {
+    display: none;
+  }
 }
 
-.breadcrumbs-current::after {
+/*.breadcrumbs-current::after {
   display: none;
 }
 
 
 .inner-page .main-footer {
   margin-top: 45px;
-}
+}*/

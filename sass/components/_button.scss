@@ -12,9 +12,9 @@
   background-color: color('black');
   border: none;
 
-  :hover,
-  :focus,
-  :active {
+  &:hover,
+  &:focus,
+  &:active {
     background-color: color('btn-ffilter');
   }
 }

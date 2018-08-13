@@ -3,21 +3,52 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  .appointment-item {
+    width: 140px;
+    margin: 0;
+    margin-bottom: 10px;
+
+    label {
+      display: block;
+      margin-bottom: 9px;
+      margin-left: 15px;
+    }
+    input {
+      box-sizing: border-box;
+      width: 140px;
+      padding-top: 8px;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom: 7px;
+
+      font: inherit;
+
+      background-color: transparent;
+      border: 2px solid #000000;
+
+      &:focus {
+        border-color: #663d15;
+      }
+    }
+  }
+  .button {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-right: 0;
+  }
 }
 
-.appointment-item {
-  width: 140px;
-  margin: 0;
-  margin-bottom: 10px;
-}
 
-.appointment-item label {
+
+/*.appointment-item label {
   display: block;
   margin-bottom: 9px;
   margin-left: 15px;
-}
+}*/
 
-.appointment-item input {
+/*.appointment-item input {
   box-sizing: border-box;
   width: 140px;
   padding-top: 8px;
@@ -29,15 +60,19 @@
 
   background-color: transparent;
   border: 2px solid #000000;
-}
+}*/
 
+/*
 .appointment-item input:focus {
   border-color: #663d15;
 }
+*/
 
+/*
 .appointment .button {
   display: block;
   width: 100%;
   margin-top: 10px;
   margin-right: 0;
 }
+*/

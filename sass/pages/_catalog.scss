@@ -80,11 +80,11 @@
 }*/
 
 .filter-input {
-  :hover + label,
-  :focus + label {
+  &:hover + label,
+  &:focus + label {
     color: #663d15;
   }
-  :disabled + label {
+  &:disabled + label {
     color: #000000;
 
     opacity: 0.5;
@@ -228,10 +228,10 @@
     background-color: #f8f8f8;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
-    :nth-child(3n) {
+    &:nth-child(3n) {
       margin-right: 0;
     }
-    :hover {
+    &:hover {
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
     a {
@@ -382,7 +382,7 @@
   .pagination-item {
     margin-right: 5px;
 
-    :last-child {
+    &:last-child {
       margin-right: 0;
     }
     a {
@@ -393,9 +393,9 @@
 
       background-color: #000000;
 
-      :hover,
-      :focus,
-      :active {
+      &:hover,
+      &:focus,
+      &:active {
         background-color: #663d15;
       }
     }
@@ -431,9 +431,9 @@
 
   background-color: #ffffff;
 
-  :hover,
-  :focus,
-  :active {
+  &:hover,
+  &:focus,
+  &:active {
     color: #000000;
 
     background-color: #ffffff;
