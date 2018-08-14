@@ -6,7 +6,7 @@
   },
   "scripts": {
    "start1": "http-server",
-    "start": "npm-run-all --parallel liveserver watch",
+    "start": "npm-run-all --parallel liveserver watch --open=/static",
     "liveserver": "live-server",
     "watch": "node-sass sass/main.scss static/css/main.css -w",
     "build": "node-sass sass/main.scss static/css/main.css --output-style compressed"
