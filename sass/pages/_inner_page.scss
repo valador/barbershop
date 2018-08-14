@@ -15,6 +15,9 @@
     display: flex;
     align-items: flex-start;
     flex-direction: row;
+    .main-navigation-wrapper {
+      margin-bottom: 0;
+    }
   }
   .main-header-logo {
     order: 0;
@@ -29,6 +32,11 @@
   .main-footer {
     margin-top: 45px;
   }
+}
+
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*.inner-page .main-header {
